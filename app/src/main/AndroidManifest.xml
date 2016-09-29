@@ -25,15 +25,8 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDNRCCCz71Umh3XCyJkXLvoxm_MHOMNRyg" />
+            android:value="@string/google_maps_key" />
 
-        <activity android:name=".CurrentPlaceActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,7 +34,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".CurrentPlaceActivity"></activity>
         <activity android:name=".LastLocationActivity"></activity>
+        <activity
+            android:name="com.itservz.android.swaisida.MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
     </application>
 
 </manifest>
